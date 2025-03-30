@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+div.badge{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 500;
+    background-color:#F3F4F6 ;
+    padding: 6px 15px 6px 15px;
+    border-radius: 4px;
+  }
+  div.green{
+    color: #065F46;
+    background-color: #D1FAE5;
+  }
+  div.red{
+    color: #991B1B;
+    background-color: #FEE2E2;
+  }
+  div.yellow{
+    color: #92400E;
+    background-color: #FEF3C7;
+  }
+  div.blue{
+    color: #1E40AF;
+    background-color: #DBEAFE;
+  }
+  div.indigo{
+    color: #3730A3;
+    background-color: #E0E7FF;
+  }
+  div.purple{
+    color: #5B21B6;
+    background-color: #EDE9FE;
+  }
+  div.pink{
+    color: #9D174D;
+    background-color: #FCE7F3;
+  }
+  div.pill{
+    border-radius: 18px;
+  }
