@@ -12,7 +12,7 @@ body{
 .header{
   width: 100%;
   color: #EAEAEA;;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(99, 93, 93);
   text-align: center;
   padding: 5px 0;
   font-size: 1rem;
@@ -21,17 +21,25 @@ body{
   position: fixed;
   top: 0;
   left: 0;
+  z-index:9999;
 }
 
-.badge-compo-div{
+.badge-div{
   max-width: 900px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
- 
   padding: 10px;
+  z-index: 1;
+  position: relative;
 }
 
+.banner-compo-div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
 
