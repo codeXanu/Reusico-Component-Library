@@ -35,11 +35,25 @@ body{
   z-index: 1;
   position: relative;
 }
+.heading1{
+  margin: 10px;
+  background-color: rgb(47, 197, 197);
+  color: black;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 8px;
 
-.banner-compo-div{
+}
+.banner-div{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   margin: 10px;
+}
+
+.card-div{
+  display: flex;
+  gap: 100px;
+  padding: 10px;
 }
 
