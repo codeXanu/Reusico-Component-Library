@@ -42,7 +42,7 @@ body{
   width: fit-content;
   padding: 5px;
   border-radius: 8px;
-
+  margin-bottom: 40px;
 }
 .banner-div{
   display: flex;
@@ -56,4 +56,32 @@ body{
   gap: 100px;
   padding: 10px;
 }
+@media only screen and (max-width: 600px) {
+  .heading1{
+    margin-top: 30px;
+  }
+  
+  .card-div{
+    flex-direction: column;
+  }
+}
 
+.testimonial-div{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.testimonialWithoutImage-div{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.tooltip-div{
+  display: flex;
+  margin: 10px;
+  max-width: 1300px;
+  justify-content: space-around;
+}

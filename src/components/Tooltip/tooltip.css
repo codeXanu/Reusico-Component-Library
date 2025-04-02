@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+.tooltip-container{
+    position: relative;
+    display: inline-block;
+}
+
+
+.tooltip-content{
+    visibility: hidden;
+    width: 384px;
+    color: var(--tooltip-textColor);
+    background-color: var(--tooltip-bg);
+    padding: 5px 10px 5px 15px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 10;
+    bottom: 145%;
+    left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0px 1px 2px .1px  var(--tooltip-bg);
+    
+}
+.tooltip-container .tooltip-content::after{
+    content: "";
+    position: absolute;
+    top: 99%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--tooltip-bg) transparent transparent  transparent;
+}
+.tooltip-container:hover .tooltip-content{
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip-toptext{
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+}
+.tooltip-toptext svg {
+    margin-top: 4px;
+}
+.tooltip-bodytext{
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+/* .tooltip-green{
+    background-color: #47AA5D;
+}
+.tooltip-light-green{
+    background-color: #E7FFF3;
+}
+.tooltip-blue{
+    background-color: #1E40AF;
+}
+.tooltip-light-blue{
+    background-color:#E0E7FF ;
+}
+.tooltip-purple{
+    background-color:#A9229B ;
+}
+.tooltip-light-purple{
+    background-color:#FFF3FC ;
+}
+.tooltip-black{
+    background-color:#262626 ;
+}
+.tooltip-white{
+    background-color: #FFFFFF;
+} */

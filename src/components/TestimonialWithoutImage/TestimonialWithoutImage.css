@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.main-container{
+    color: black;
+    background-color: #F9FAFB;
+    background-image: url('./asset/DotPattern.png');
+    background-position: -60px 100px;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    min-height: 270px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px 10px 10px 10px ;
+}
+
+.content{
+    text-align: center;
+    margin: 50px 120px 30px 120px;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    font-size: 14px;
+    font-weight: 600;
+}
+.text{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: 0%;
+}
+.about{
+    font-size: 13px ;
+    font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+    .main-container{
+        background-position: -60px 200px;
+        flex-direction: column;
+        margin: 5px 0px 5px 0px;
+    }
+    .content {
+        margin: 50px 20px 50px 20px;
+    }
+    .content .text{
+        text-align: left;
+    }
+    .content .about{
+        text-align: left;
+        text-wrap: wrap;
+    }
+    
+}

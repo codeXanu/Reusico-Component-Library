@@ -2,6 +2,9 @@ import React from "react" ;
 import Badge from "./components/Badge/Badge";
 import Banner from "./components/Banner/Banner";
 import Card from "./components/Card/Card";
+import Testimonial from "./components/Testimonial/index";
+import TestimonialWithoutImage from "./components/TestimonialWithoutImage/TestimonialWithoutImage";
+import Tooltip from "./components/Tooltip/Tooltip";
 
 
 
@@ -49,7 +52,7 @@ function App() {
 
       <hr />
       <h2 className="heading1">These are Cards:--</h2>
-      
+
       <div className="card-div">
           <Card />
           <Card 
@@ -63,6 +66,66 @@ function App() {
 
       </div>
 
+      <hr />
+      <h2 className="heading1">These are Testimonials with Image:--</h2>
+
+      <div className="testimonial-div">
+        <Testimonial> 
+          <Testimonial.Image src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          <Testimonial.Content> 
+            <Testimonial.Text> Anuj Maurya, A Software Engineer and Web Developer / This is custom testinonial.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing. </Testimonial.Text>
+            <Testimonial.Name>Anuj Kumar Maurya</Testimonial.Name> 
+            <Testimonial.Role>Founder & CEO / Reusico</Testimonial.Role>
+          </Testimonial.Content>
+        </Testimonial>
+
+        <Testimonial> 
+            <Testimonial.Image />
+            <Testimonial.Content> 
+              <Testimonial.Text/>
+              <Testimonial.Name />
+              <Testimonial.Role />
+            </Testimonial.Content>
+        </Testimonial>
+
+      </div>
+
+      <hr />
+      <h2 className="heading1" >These are Testimonials without Image:--</h2>
+
+      <div className="testimonialWithoutImage-div">
+          <TestimonialWithoutImage 
+            heading={<>Reusico<span style={{ color: "#2E59F3" }}>Library</span></>}
+            name ="Anuj Maurya / The Founder & CEO"
+          >
+          Anuj Maurya .  //Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Nemo sint magnam illum quam repellendus? Maxime dolorem 
+          corporis ut deleniti pariatur.  Lorem ipsum dolor sit amet consectetur adipisicing. 
+          </TestimonialWithoutImage>
+          
+          <TestimonialWithoutImage />
+
+      </div>
+
+      <hr />
+      <h2 className="heading1" >Hover to look the Tooltip:--</h2>
+
+      <div className="tooltip-div" >
+        <Tooltip color = "purple" > 
+          <Badge color="purple" >Hover me</Badge>
+        </Tooltip>
+        <Tooltip color = "white" > 
+          <Badge >Hover me</Badge>
+        </Tooltip>
+
+        <Tooltip color = "light-blue" > 
+          <Badge color="indigo" >Hover me</Badge>
+        </Tooltip>
+
+        <Tooltip color = "green" heading="This is heading" bodytext="These are bodytext." > 
+          <Badge color="green" >this is Where to be hover</Badge>
+        </Tooltip>
+      </div> 
     </>
   )
 }
