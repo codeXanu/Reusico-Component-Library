@@ -14,14 +14,14 @@ body{
   color: #EAEAEA;;
   background-color: rgb(99, 93, 93);
   text-align: center;
-  padding: 5px 0;
+  padding: 1px 0;
   font-size: 1rem;
   box-shadow: 0px 4px 6px rgba(240, 221, 221, 0.1);
   margin-bottom: 20px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index:9999;
+  z-index:99;
 }
 
 .badge-div{
@@ -84,4 +84,29 @@ body{
   margin: 10px;
   max-width: 1300px;
   justify-content: space-around;
+}
+.toast-div{
+  display: flex;
+  width: 99%;
+  min-height: 100px;
+  justify-content: center;
+  margin: 10px;
+}
+.toast-div button{
+  height: 50px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer{
+  width: 100%;
+  background-color: #88755c;
+  bottom: 0;
+  text-align: center;
+  padding: 1px;
 }

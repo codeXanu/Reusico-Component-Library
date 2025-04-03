@@ -5,7 +5,7 @@ import Card from "./components/Card/Card";
 import Testimonial from "./components/Testimonial/index";
 import TestimonialWithoutImage from "./components/TestimonialWithoutImage/TestimonialWithoutImage";
 import Tooltip from "./components/Tooltip/Tooltip";
-
+import Toast from "./components/ToastPopup/ToastPopup"
 
 
 function App() {
@@ -14,10 +14,20 @@ function App() {
     alert("Card has been clicked")
   }
 
+  const [showToast, setShowToast] = React.useState(false);
+
+  function handleShowToast(){
+    setShowToast(true);
+
+    setTimeout(()=>{
+      setShowToast(false)
+    }, 4000 )
+  }
+
   return(
     <>
       <header className="header">
-        <h1>Reusico-Components-Library.</h1>
+        <h2>Reusico-Components-Library</h2>
       </header>
       <h2 className="heading1">These are Badges:--</h2>
       <div className="badge-div">
@@ -126,6 +136,25 @@ function App() {
           <Badge color="green" >this is Where to be hover</Badge>
         </Tooltip>
       </div> 
+
+      <hr />
+      <h2 className="heading1" >Click the Button to see Toast:--</h2>
+
+      <div className="toast-div">
+
+        <button onClick={handleShowToast}>Show Toast</button>
+        { showToast && <Toast message="The buttun Clicked" position="top-left" duration={5000} ></Toast>}
+        { showToast && <Toast message="The buttun Clicked" variant="warning" position="top-right" duration={5000} ></Toast>}
+        { showToast && <Toast message="The buttun Clicked" variant="error" position="bottom-right" duration={5000} ></Toast>}
+        { showToast && <Toast message="The buttun Clicked" variant="neutral" position="bottom-left" duration={5000} ></Toast>}
+        
+
+        <Toast position="bottom-right" variant="neutral" message="The Page Loaded" duration={5000} />
+      </div>
+
+      <footer className="footer">
+            <p>Made with ❤️ by Anuj Maurya | © 2025</p>
+      </footer>
     </>
   )
 }
