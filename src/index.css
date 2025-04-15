@@ -3,8 +3,10 @@
 }
 body{
   font-family: inter, sans-serif;
-  color: white;
-  background-color: rgb(44, 41, 41);
+  /* color: rgb(255, 255, 255); */
+  /* background-color: #f9fafb ; */
+  background-color: #202020;
+  color: #f1f5f9;
   margin: 0;
   padding-top: 110px;
 }
@@ -12,16 +14,47 @@ body{
 .header{
   width: 100%;
   color: #EAEAEA;;
-  background-color: rgb(99, 93, 93);
+  background-color:  #212529;
   text-align: center;
   padding: 1px 0;
   font-size: 1rem;
-  box-shadow: 0px 4px 6px rgba(240, 221, 221, 0.1);
+  box-shadow: 0 2px 4px rgba(201, 201, 201, 0.05);
   margin-bottom: 20px;
   position: fixed;
   top: 0;
   left: 0;
   z-index:99;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+nav img{
+  width: 50px;
+  height: 50px;
+}
+.all-components-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+.badge-container{
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed white;
+  border-radius: 16px;
+  padding:1.2em;
+  background-color: rgb(127, 132, 136);
+  /* justify-content: center;
+  align-items: center; */
+}
+.content-heading{
+  display: flex;
+  justify-content: flex-start;
 }
 
 .badge-div{
@@ -37,12 +70,19 @@ body{
 }
 .heading1{
   margin: 10px;
-  background-color: rgb(47, 197, 197);
-  color: black;
+  background-color: #445c83;
+  color: rgb(255, 255, 255);
   width: fit-content;
-  padding: 5px;
-  border-radius: 8px;
+  padding:1em;
+  border-radius: 12px;
   margin-bottom: 40px;
+}
+
+.banners-container{
+  padding: 1.2em;
+  border:1px dashed white;
+  border-radius: 16px;
+  background-color: rgb(127, 132, 136);
 }
 .banner-div{
   display: flex;
@@ -51,6 +91,13 @@ body{
   margin: 10px;
 }
 
+
+.cards-container{
+  border: 1px dashed white;
+  border-radius: 16px;
+  padding: 1.5em;
+  background-color: rgb(127, 132, 136);
+}
 .card-div{
   display: flex;
   gap: 100px;
@@ -66,24 +113,59 @@ body{
   }
 }
 
+
+.testimonialWithImage-container{
+  border: 1px dashed white;
+  border-radius: 16px;
+  padding: 1.2em;
+  margin: 2.5em;
+  background-color: rgb(228, 233, 236);
+}
 .testimonial-div{
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin-bottom: 30px;
 }
+
+.testimonialWithoutImage-container{
+  border: 1px dashed white;
+  border-radius: 16px;
+  padding: 1.5em;
+  margin: 2.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: rgb(127, 132, 136);
+}
 .testimonialWithoutImage-div{
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-bottom: 25px;
 }
-
+.all-tooltip-container{
+  width: 95%;
+  border:1px dashed white ;
+  border-radius: 16px;
+  padding: 1.2em;
+  margin: 1.5em;
+  background-color: rgb(127, 132, 136);
+}
 .tooltip-div{
   display: flex;
   margin: 10px;
+  width: 100%;
   max-width: 1300px;
   justify-content: space-around;
+}
+
+.all-toast-container{
+  width: 95%;
+  border: 1px dashed white;
+  border-radius: 16px;
+  padding: 1.2em;
+  margin: 1em;
+  margin-bottom: 3.9em;
+  background-color: rgb(127, 132, 136);
 }
 .toast-div{
   display: flex;
@@ -105,7 +187,7 @@ body{
 
 .footer{
   width: 100%;
-  background-color: #88755c;
+  background-color: #2e3138;
   bottom: 0;
   text-align: center;
   padding: 1px;

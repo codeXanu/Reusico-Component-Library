@@ -8,13 +8,9 @@ import Neutralicon from "./BannerAsset/Neutralicon.png"
 import classNames from "classnames";
 
 function Banner( {children, variant, title}) {
-    // console.log(title)
-    // console.log(children)
-
 
     const bodyText = children ? children : "It is working" ;
-    // console.log(bodyText)
-
+    
     const bannerVariant = variant &&
         variant==="success" ? {defaultTitle: "Congratulations!", icon: Checkcircle, class: "success"} :
         variant==="warning" ? {defaultTitle: "Attention Needed", icon: Exclamation, class: "warning"} :
