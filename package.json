@@ -1,6 +1,6 @@
 {
   "name": "reusico-component-library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reusable React component library by Anuj Kumar Maurya",
   "main": "dist/reusico-component-library.umd.js",
   "module": "dist/reusico-component-library.es.js",
