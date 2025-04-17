@@ -73,19 +73,19 @@
     margin-bottom: 0;
   }
   
-  .toast-success{
+  .toastSuccess{
     color: #065F46;
     background-color: #ECFDF5;
   }
-  .toast-warning{
+  .toastWarning{
     color: #92400E;
     background-color: #FFFBEB;
   }
-  .toast-error{
+  .toastError{
     color: #92400E;
     background-color: #FEF2F2;
   }
-  .toast-neutral{
+  .toastNeutral{
     color: #1E40AF;
     background-color: #EFF6FF;
   }

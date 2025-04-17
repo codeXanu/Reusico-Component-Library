@@ -3,7 +3,7 @@
 }
 
 
-.main-container{
+.mainContainer{
     color: black;
     background-color: #F9FAFB;
     background-image: url('./asset/DotPattern.png');
@@ -38,7 +38,7 @@
     font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
-    .main-container{
+    .mainContainer{
         background-position: -60px 200px;
         flex-direction: column;
         margin: 5px 0px 5px 0px;

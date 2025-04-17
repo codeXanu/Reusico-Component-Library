@@ -1,0 +1,7 @@
+export { default as Badge } from './Badge/Badge'
+export { default as Banner } from './Banner/Banner'
+export { default as Card } from './Card/Card'
+export { default as Testimonial } from './Testimonial/Testimonial/index'
+export { default as TestimonialWithoutImage } from './TestimonialWithoutImage/TestimonialWithoutImage'
+export { default as ToastPopup } from './ToastPopup/ToastPopup'
+export { default as Tooltip } from './Tooltip/Tooltip'

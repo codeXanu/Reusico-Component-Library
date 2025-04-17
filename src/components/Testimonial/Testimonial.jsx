@@ -1,16 +1,14 @@
 import React from "react";
-import "./testimonial.css"
+import styles from "./testimonial.module.css";
 
-function Testimonial( {children}){
-
-    return(
-        <div>
-            <div className="testimonial-container" >
-                {children}
-            </div>
-        </div>
-    )
+function Testimonial({ children }) {
+  return (
+    <div>
+      <div className={styles.testimonialContainer}>
+        {children}
+      </div>
+    </div>
+  );
 }
 
-
-export default Testimonial ;
+export default Testimonial;
