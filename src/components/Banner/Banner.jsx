@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./banner.module.css"; // Import the CSS Module
+import styles from "./banner.module.css"
 import Checkcircle from "./BannerAsset/Check-circle.png";
 import Exclamation from "./BannerAsset/Exclamation.png";
 import errorIcon from "./BannerAsset/errorIcon.png";

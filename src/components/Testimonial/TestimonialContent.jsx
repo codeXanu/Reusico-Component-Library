@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "./TestimonialAsset/Icon.png";
-import styles from "./Testimonial.module.css";
+import styles from "./testimonial.module.css";
 
 function TestimonialContent({ children }) {
   return (
