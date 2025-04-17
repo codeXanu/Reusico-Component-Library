@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./testimonialWithoutImage.module.css";
+import styles from "./TestimonialWithoutImage.module.css";
 
 function TestimonialWithoutImage({ children, heading, name }) {
   return (

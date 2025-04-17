@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./testimonial.module.css";
+import styles from "./Testimonial.module.css";
 
 function TestimonialText({ children }) {
   return (
