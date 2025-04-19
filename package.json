@@ -2,26 +2,27 @@
   "name": "reusico-component-library",
   "version": "1.0.8",
   "description": "Reusable React component library by Anuj Kumar Maurya",
-  "main": "dist/reusico-component-library.cjs.js",
-  "module": "dist/reusico-component-library.esm.js",
+  "main": "dist-lib/reusico-component-library.cjs.js",
+  "module": "dist-lib/reusico-component-library.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/reusico-component-library.esm.js",
-      "require": "./dist/reusico-component-library.cjs.js"
+      "import": "./dist-lib/reusico-component-library.esm.js",
+      "require": "./dist-lib/reusico-component-library.cjs.js"
     },
-    "./dist/reusico-component-library.css": {
-      "default": "./dist/reusico-component-library.css"
+    "./dist-lib/reusico-component-library.css": {
+      "default": "./dist-lib/reusico-component-library.css"
     }
   },
   "files": [
-    "dist"
+    "dist-lib"
   ],
   "scripts": {
     "dev": "vite",
     "build:lib": "vite build",
     "build:demo": "cross-env BUILD_TARGET=demo vite build",
     "build:all": "npm run build:lib && npm run build:demo",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
   "keywords": [
     "react",
@@ -40,14 +41,14 @@
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "react-code-blocks": "^0.1.6"
+  },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "cross-env": "^7.0.3",
     "eslint": "^9.21.0",
     "vite": "^6.2.0"
-  },
-  "dependencies": {
-    "classnames": "^2.5.1",
-    "react-code-blocks": "^0.1.6"
   }
 }
