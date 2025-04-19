@@ -5,6 +5,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   build: {
+    outDir: 'dist',  // Output directory for static files
     lib: {
       entry: path.resolve(__dirname, 'src/components/index.js'),
       name: 'ReusicoComponentLibrary',
@@ -24,10 +25,10 @@ export default defineConfig({
         },
       },
     },
-    outDir: 'dist',
-    emptyOutDir: true,
   },
+  root: './', // Ensure root is the root directory (including index.html)
 });
+
 
 
 
