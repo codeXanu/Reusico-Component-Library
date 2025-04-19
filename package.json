@@ -18,9 +18,10 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint ."
+    "build:lib": "vite build",
+    "build:demo": "cross-env BUILD_TARGET=demo vite build",
+    "build:all": "npm run build:lib && npm run build:demo",
+    "preview": "vite preview"
   },
   "keywords": [
     "react",
@@ -41,10 +42,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "cross-env": "^7.0.3",
     "eslint": "^9.21.0",
     "vite": "^6.2.0"
   },
   "dependencies": {
-    "classnames": "^2.5.1"
+    "classnames": "^2.5.1",
+    "react-code-blocks": "^0.1.6"
   }
 }
