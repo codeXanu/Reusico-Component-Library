@@ -266,8 +266,47 @@ export default function DemoPage() {
 
           <Toast position="bottom-right" variant="success" message="Showing Preview" duration={5000} />
 
-
         </>
+    )
+    const toastCode = (
+        `
+  function App() {
+  const [showToast, setShowToast] = React.useState(false);
+
+  function handleShowToast() {
+    setShowToast(true);
+
+    setTimeout(() => {
+      setShowToast(false);
+    }, 5000);
+  }
+
+  return (
+    <>
+      <button
+        onClick={handleShowToast}
+        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl shadow-md 
+ transition-all duration-200"
+      >
+        Show Toast
+      </button>
+
+      {showToast && (
+        <>
+          <ToastPopup message="The buttun Clicked" variant="success" position="top-left" duration={5000} ></ToastPopup>
+          <ToastPopup message="The buttun Clicked" variant="warning" position="top-right"  ></ToastPopup>
+          <ToastPopup message="The buttun Clicked" variant="error" position="bottom-right"  ></ToastPopup>
+          <ToastPopup message="The buttun Clicked" variant="neutral" position="bottom-left"  ></ToastPopup>
+        </>
+      )}
+    </>
+
+    {/*This will popup on screen load */}
+    <ToastPopup position="bottom-right" variant="success" message="Showing Preview" duration={5000} />
+
+  )
+}
+`
     )
 
 
@@ -326,7 +365,7 @@ export default function DemoPage() {
                     title="ToastPopup"
                     para = "Click on the button to see the Toast"
                     preview={toastList }
-                    code={tooltipCode}
+                    code={toastCode}
                 />
             </div>
 
