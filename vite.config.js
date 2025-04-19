@@ -2,12 +2,16 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
-const isLibBuild = process.env.BUILD === 'lib';
+const isDemoBuild = process.env.BUILD_TARGET === 'demo';
 
 export default defineConfig({
   plugins: [react()],
-  build: isLibBuild
+  build: isDemoBuild
     ? {
+        outDir: 'demo-dist',
+        emptyOutDir: true,
+      }
+    : {
         lib: {
           entry: path.resolve(__dirname, 'src/components/index.js'),
           name: 'ReusicoComponentLibrary',
@@ -27,11 +31,7 @@ export default defineConfig({
             },
           },
         },
-        outDir: 'dist-lib', // for npm
-        emptyOutDir: true,
-      }
-    : {
-        outDir: 'dist', // for Vercel
+        outDir: 'dist',
         emptyOutDir: true,
       },
 });
